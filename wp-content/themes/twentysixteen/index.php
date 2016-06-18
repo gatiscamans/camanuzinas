@@ -40,13 +40,19 @@ get_header(); ?>
 
 			// End the loop.
 			endwhile;
-
-			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentysixteen' ),
-				'next_text'          => __( 'Next page', 'twentysixteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
-			) );
+			
+			if(function_exists('wp_paginate')) {
+				wp_paginate();
+			}
+			else {
+				// Previous/next page navigation.
+				the_posts_pagination( array(
+					'prev_text'          => __( 'Previous page', 'twentysixteen' ),
+					'next_text'          => __( 'Next page', 'twentysixteen' ),
+					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
+				) );
+			}
+			
 
 		// If no content, include the "No posts found" template.
 		else :

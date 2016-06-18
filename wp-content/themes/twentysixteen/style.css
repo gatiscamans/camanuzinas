@@ -3979,3 +3979,6 @@ p > video {
 .names{
 	color: #800000;
 }
+.custom_pagination {
+	text-align: center;
+}
