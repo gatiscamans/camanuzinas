@@ -403,6 +403,7 @@ $vd['12']['30'] = 'Daniela, Dāniels, Dāvids, Dāvis';
 $vd['12']['31'] = 'Kalvis, Silvestrs, Silvis';
 $m = date("m");
 $d = date("d");
+date_default_timezone_set('Europe/Riga');
 ?>
 <div id="page" class="site">
 	<div class="site-inner">

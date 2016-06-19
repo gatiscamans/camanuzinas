@@ -14,13 +14,13 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'twentysixteen' ); ?></h1>
+					<h2 class="not_found_title"><?php _e( 'Šāda lapa nav atrasta!', 'twentysixteen' ); ?></h2>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentysixteen' ); ?></p>
+					<p><?php //_e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentysixteen' ); ?></p>
 
-					<?php get_search_form(); ?>
+					<?php //get_search_form(); ?>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 

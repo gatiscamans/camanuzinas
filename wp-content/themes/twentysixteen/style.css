@@ -3976,6 +3976,7 @@ p > video {
 	border-style: solid;
     border-color: yellow;
 }
+.not_found_title,
 .names{
 	color: #800000;
 }
