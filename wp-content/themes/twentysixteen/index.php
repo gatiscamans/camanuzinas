@@ -28,6 +28,11 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php
+			if( is_home() ) {
+				$args = array( 'category__in' => array(1) );
+				$args = ( $wp_query && $wp_query->query ) ? array_merge( $wp_query->query , $args ) : $args;
+				query_posts( $args );
+			}
 			// Start the loop.
 			while ( have_posts() ) : the_post();
 
